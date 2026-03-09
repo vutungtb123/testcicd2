@@ -18,7 +18,7 @@ void setUp(){
 
     @Test
     void addBaihat() {
-        BaiHat bh1= new BaiHat("PN00333","Đom đóm","Jack", 59,"Nhạc thiếu nhi");
+        BaiHat bh1= new BaiHat("PN00333","Đom đóm","Jack", 3.5f,"Nhạc thiếu nhi");
         service.addBaihat(bh1);
         assertEquals(1,service.getAll().size());
     }
