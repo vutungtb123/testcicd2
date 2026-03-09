@@ -29,6 +29,19 @@ void setUp(){
         String massage=service.addBaihat(bh);
         assertEquals("thời gian phải từ 2.0 -> 5.59",massage);
     }
+    @Test
+    void testThemtime2(){
+        BaiHat bh=new BaiHat("abc","abc","ab",2,"abc");
+        String massage=service.addBaihat(bh);
+        assertEquals("Thêm thành công",massage);
+    }
+
+    @Test
+    void testThemtime3(){
+        BaiHat bh=new BaiHat("abc","abc","ab",2.1f,"abc");
+        String massage=service.addBaihat(bh);
+        assertEquals("Thêm thành công",massage);
+    }
 
 
 
